@@ -16,20 +16,22 @@
         </div>
         <div class="video-content">
             <div class="video-frame">
-                <video controls autoplay src="videos/big_buck_bunny.mp4">
-                    Soory, this video cannot be played in your browser. <!--Browser incompatibility-->
+                <video id="play" controls autoplay>
+                    Sorry, this video cannot be played in your browser. <!--Browser incompatibility-->
                 </video>
             </div>
-            <div class="video-title">Big buck bunny</div>
+            <div class="video-title"></div>
         </div>
         <div class="video-btn-group">
             <div class="video-btn" id="prev-btn">
-                <button>PREV</button>
+                <button onclick="ChangeVideo(-1)">PREV</button>
             </div>
             <div class="video-btn" id="next-btn">
-                <button>NEXT</button>
+                <button onclick="ChangeVideo(+1)">NEXT</button>
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="video.js"></script>
 </body>
 </html>
